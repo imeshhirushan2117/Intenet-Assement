@@ -1,0 +1,46 @@
+body > section{
+    height: 100vh;
+    font-size: 100px;
+    font-family: 'Nunito', sans-serif;
+}
+#sec1{
+    background-color: rgb(238, 241, 245);
+}
+#sec2{
+    background-color: rgba(30, 144, 255, 300);
+}
+#sec3{
+    background-color: rgb(86, 73, 74);
+}
+#sec4{
+    background-color: rgb(154, 11, 11);
+}
+#card1{
+    background-color: red;
+}
+#card2{
+    background-color: rgba(15, 59, 128, 0.7);
+}
+#card3{
+    background-color: rgb(44, 42, 42);
+}
+#card4{
+    background-color: rgb(250, 49, 49);
+}
+
+body > section > div:nth-of-type(1){
+    position: sticky;
+    top: 0;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 50px;
+    color: white;
+}
+body > section > div:nth-of-type(2){
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100vh;
+}

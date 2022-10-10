@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uresha POS System by Imesh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="assets/fonts/css/all.css" rel="stylesheet">
+</head>
+<body>
+<header class="shadow-lg">
+
+<!--    <nav>
+        <div>
+            <img src="" alt="loading error">
+        </div>
+
+        <div>
+            <ul class="d-flex flex-row bd-highlight mb-3">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Parts</a></li>
+            </ul>
+        </div>-->
+    <!--</nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/pos-system-icon-0.png" alt="" width="50.3125" height="47.1976">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">
+                            Items
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+
+        <div class="rounded-3 p-3" style="background-color: #DDE4F0; margin-top: 30px; height: 85vh">
+            <h1 class="text-lg-start mb-3"><i class="fas fa-users"></i>Customer</h1>
+
+            <div class="row align-items-start pb-3">
+                <div class="col-4">
+                    <h4>Customer Search</h4>
+                    <div class="input-group mb-3 style=height: 10px">
+                        <input type="text" class="form-control" placeholder="Input Name/NIC/Tp Here" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-success" type="button" id="button-addon2">
+                            <i class="bi bi-search m-2"></i>Search</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn-danger">Delete</button>
+                    <button class="btn-primary">Details</button>
+                    <button class="btn-success">Clear</button>
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+                <div class="col-5">
+                    <button type="button" class="btn btn-primary btn-sm">New Customer</button>
+                    <button type="button" class="btn btn-secondary btn-sm">View All Customers</button>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-12 mt-2">
+                    <table class="table table-dark table-striped table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Tp</th>
+                            <th scope="col">Salary</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>C003</td>
+                            <td>Malitha</td>
+                            <td>Panadura</td>
+                            <td>10000.00</td>
+                        </tr>
+                        <tr>
+                            <td>C004</td>
+                            <td>Siripala</td>
+                            <td>Galle</td>
+                            <td>24000.00</td>
+                        </tr>
+                        <tr>
+                            <td>C005</td>
+                            <td>Jinadasa</td>
+                            <td>Panadura</td>
+                            <td>94000.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+</body>
+</html>

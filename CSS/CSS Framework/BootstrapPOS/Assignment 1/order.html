@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="assets/fonts/css/all.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/pos-system-icon-0.png" alt="" width="50.3125" height="47.1976" class="d-inline-block align-text-top">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Items</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="nav justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fas fa-sign-out-alt"></i>Log out</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="alert alert-secondary" role="alert">
+    <i class="fas fa-shopping-bag"></i> Place Order
+</div>
+
+<!--main Container-->
+<section class="container-fluid bg-light">
+    <!--Order Placing Row-->
+    <section class="row">
+        <!--       Col 1 As Invoices Details-->
+        <div class="col bg-white m-4 pb-4">
+
+            <!-- Internal Grid           -->
+            <section class="container">
+                <!--Row 01-->
+                <div class="row">
+                    <div class="bg-black-75 mb-3 p-2"><h4>Invoice Details</h4></div>
+                    <div class="col">
+                        <caption>Order ID:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Date:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+
+                </div>
+                <!--Row 02-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Customer:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Customer ID:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+
+                </div>
+                <!--Row 03-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Name:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Salary:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+
+                </div>
+                <!--Row 04-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Address:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--       Col 2 As Item Select-->
+        <div class="col bg-white m-4 pb-4">
+
+            <!--Container For Item Select Grid-->
+            <section class="container">
+                <!--Row 01-->
+                <div class="row">
+                    <div class="bg-black-75 mb-3 p-2"><h4>Item Select</h4></div>
+                    <div class="col">
+                        <caption>Item:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Item Code:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                </div>
+
+                <!--Row 02-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Item Name:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Price:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>QtyOnH:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+
+                </div>
+
+                <!--Row 03-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Order Quantity:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                </div>
+
+                <!--Row 04-->
+                <div class="row align-items-end">
+                    <div class="col-12 mt-lg-4">
+                        <button class="btn btn-danger">Add Item</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!--       Col 1 As Price Total-->
+        <div class="col bg-white m-4 pb-4">
+            <h4 class="text-primary">Total: 1050Rs./=</h4>
+            <h4 class="text-danger">SubTotal: 945Rs./=</h4>
+            <!-- Internal Grid-->
+            <section class="container">
+                <!--Row 01-->
+                <div class="row">
+                    <div class="col">
+                        <caption>Cash:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Discount:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                </div>
+
+
+                <!--Row 02-->
+                <div class="row">
+                    <div CLASS="col">
+                        <caption>Balance:</caption>
+                        <form>
+                            <input class="form-control " type="text">
+                        </form>
+                    </div>
+                </div>
+
+                <!--Row 03-->
+                <div class="row align-items-center">
+                    <div class="col-12 mt-lg-4">
+                        <button class="btn btn-success">Purchase</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- ####################  -->
+
+    <!--Table Row-->
+    <section class="row p-3 mb-5">
+        <div class="col">
+            <table class="table table-dark table-striped table-bordered table-hover">
+                <thead class="table-warning">
+                <tr class="table-dark">
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">P001</th>
+                    <td>Keerisamba 5Kg</td>
+                    <td>525.00</td>
+                    <td>2</td>
+                    <td>1050</td>
+                </tr>
+                <tr>
+                    <th scope="row">P002</th>
+                    <td>Parippu 2Kg</td>
+                    <td>200.00</td>
+                    <td>1</td>
+                    <td>200</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

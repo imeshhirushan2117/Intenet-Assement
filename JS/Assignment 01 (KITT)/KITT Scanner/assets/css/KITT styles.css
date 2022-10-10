@@ -1,0 +1,65 @@
+body > section{
+    background-color: #070707;
+}
+
+h1{
+    color: red;
+    position: absolute;
+    width: 205px;
+    height: 60px;
+    top: 215px;
+    bottom: 0;
+    left: 585px;
+    right: 0;
+}
+
+body > section > #main\ container{
+    display: flex;
+    /*border-top: 2px solid white;
+    border-bottom: 2px solid white;*/
+    /*border-bottom: 3px solid red;
+    border-top: 3px solid red;*/
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 290px;
+    align-items: center;
+    justify-content: center;
+}
+
+section > #main\ container > div{
+    border: 1px solid black;
+    /*width: 570px;
+    height: 60px;*/
+    width: 120px;
+    height: 50px;
+    position: relative;
+}
+
+#buttons{
+    position: absolute;
+    width: 199px;
+    height: 30px;
+    top: 192px;
+    bottom: 0px;
+    right: 0px;
+    left: 80px;
+    margin: auto;
+}
+div > button{
+    /*width: 100px;*/
+    width: 80px;
+    height: 30px;
+}
+#buttons > button:nth-child(1){
+    background-color: blue;
+    border: 1px solid black;
+    color: white;
+}
+#buttons > button:nth-child(2){
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+}

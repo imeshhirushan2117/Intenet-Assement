@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6 by Imesh</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: #494747;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        section > h2{
+            position: absolute;
+            margin: auto;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-size: 30px;
+            z-index: 3;
+        }
+        section::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 20px solid #dbe6e7;
+            border-top: 20px solid red;
+            border-radius: 100%;
+        }
+        section:hover::after{
+            transform: rotate(360deg);
+            transition: all 2s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h2>RWAD</h2>
+</section>
+</body>
+</html>

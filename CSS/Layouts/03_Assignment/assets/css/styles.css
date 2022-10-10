@@ -1,0 +1,65 @@
+body > section {
+    position: relative;
+    height: 100vh;
+}
+
+body > section:nth-of-type(1) > div {
+    background-color: rgba(139, 30, 148, 0.7);
+}
+
+body > section:nth-of-type(2) > div {
+    background-color: rgba(52, 116, 215, 0.7);
+}
+
+body > section:nth-of-type(3) > div {
+    background-color: rgba(222, 81, 81, 0.7);
+}
+
+section > div {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    /*margin-left: 600px;*/
+
+}
+
+section > div > p {
+    position: relative;
+    margin: auto;
+    top: 45%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+body > div {
+    z-index: 50;
+    border: 15px solid red;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+body > div:nth-child(2) {
+    border: 15px solid gray;
+    width: 270px;
+    height: 270px;
+}

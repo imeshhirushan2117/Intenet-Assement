@@ -1,0 +1,107 @@
+section{
+    height: 100vh;
+    background: radial-gradient(circle, rgba(24, 40, 72, 1) 0%, rgba(75, 108, 183, 1) 50%, rgba(24, 40, 72, 1) 100%);
+}
+
+section > div{
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    border: 10px solid rgb(0, 132, 255);
+    /*display: flex;*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;*/
+    overflow: hidden;
+}
+
+section > div > div{
+    width: 5000px;
+    height: 600px;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 3s;
+}
+
+section > div > div > div{
+    width: 1000px;
+    height: 600px;
+}
+
+#div1{
+    background-image: url("../img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#div2{
+    background-image: url("../img/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#div3{
+    background-image: url("../img/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#div4{
+    background-image: url("../img/iron-man-the-avengers-marvel-comics-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#div5{
+    background-image: url("../img/free 960X800 Car cool 960x800 wallpaper screensaver preview id 113222.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+@keyframes scroll {
+    0%{
+        margin-left: 0px;
+    }
+
+    25%{
+        margin-left: -1000px;
+    }
+
+    50%{
+        margin-left: -2000px;
+    }
+
+    75%{
+        margin-left: -3000px;
+    }
+
+    100%{
+        margin-left: -4000px;
+    }
+
+}

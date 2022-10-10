@@ -1,0 +1,80 @@
+section{
+    height: 100vh;
+    position: relative;
+}
+
+section > div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 5px solid red;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes drop {
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+
+    12.5%{
+        width: 100px;
+        height: 100px;
+    }
+
+    25%{
+        width: 150px;
+        height: 150px;
+    }
+
+    37.5%{
+        width: 200px;
+        height: 200px;
+    }
+
+    50%{
+        width: 250px;
+        height: 250px;
+    }
+
+    62.5%{
+        width: 300px;
+        height: 300px;
+    }
+
+    75%{
+        width: 350px;
+        height: 350px;
+    }
+
+    87.5%{
+        width: 400px;
+        height: 400px;
+    }
+
+    100%{
+        width: 450px;
+        height: 450px;
+    }
+
+    from{
+        width: 50px;
+        height: 50px;
+    }
+
+    to{
+        width: 400px;
+        height: 400px;
+        border: 3px solid transparent;
+    }
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KITT Scanner by Imesh</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/KITT%20styles.css">
+</head>
+<body>
+
+<h1>Knight Rider</h1>
+
+<section>
+    <div id="main container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+        <div id="div7"></div>
+    </div>
+</section>
+
+<div id="buttons">
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+</div>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    var colorKitt = ["#ff0000", "#ff3333", "#ff5c5c", "#ff7575", "#ff9999", "#fac3c3"];
+    var kittIds = [$("#div1"), $("#div2"), $("#div3"), $("#div4"), $("#div5"), $("#div6"), $("#div7")];
+
+    function clearColor(){
+        for (var i=0; i < kittIds.length; i++) {
+            kittIds[i].css("background-color", "white");
+        }
+    }
+    let IntervalX;
+    var i= 0;
+    function forward() {
+        clearColor();
+        kittIds[i].css("background-color", colorKitt[0]);
+        i++;
+        if (i == 7) {
+            i=0;
+            clearInterval(intervalF);
+            IntervalX = setInterval(backward, 30);
+        }
+    }
+
+    x = 5;
+    function backward() {
+        clearColor();
+        kittIds[x].css("background-color", colorKitt[0]);
+        x--;
+        if (x == -1) {
+            x=5;
+            clearInterval(IntervalX);
+            start();
+        }
+    }
+    function start() {
+        intervalF = setInterval(forward, 30);
+    }
+    intervalF = setInterval(forward, 30);
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body{
+    overflow: hidden;
+}
+
+#sky_div{
+    background-image: url(../resources/sky.jpg);
+    height: 100vh;
+    /*background-position: 50%;*/
+    background-repeat: no-repeat;
+}
+
+#cont{
+    position: absolute;
+    width: 10000px;
+    height: 450px;
+    /*border: 1px solid red;*/
+    bottom: 8px;
+    animation-name: right_to_left;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 18s;
+}
+
+#city_div{
+    position: relative;
+    background-image: url(../resources/city.png);
+    height: 50vh;
+    /*width: 5000px;
+    background-position: 100%;*/
+    background-repeat: repeat-x;
+    background-size: 1600px;
+    top: 40vh;
+}
+
+#road{
+    position: relative;
+    background-image: url(../resources/road.jpg);
+    /*height: 378px;*/
+    height: 292px;
+    /*height: 32vh;*/
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: 10%;
+    top: 270px;
+}
+
+@keyframes right_to_left {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -8000px;
+    }
+}
+
+#car{
+    position: absolute;
+    background-image: url(../resources/car.png);
+    width: 500px;
+    height: 200px;
+    /*background-color: red;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 550px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+#tire1{
+    position: relative;
+    background-image: url(../resources/wheel.png);
+    width: 95px;
+    height: 95px;
+    background-size: 95px;
+    background-repeat: no-repeat;
+    top: 105px;
+    /*background-color: aqua;*/
+    left: 42px;
+
+    animation-name: tire1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 17s;
+    animation-delay: 1s;
+}
+
+#tire2{
+    position: relative;
+    background-image: url(../resources/wheel.png);
+    width: 95px;
+    height: 95px;
+    background-size: 95px;
+    background-repeat: no-repeat;
+    top: 10px;
+    /*background-color: aqua;*/
+    left: 347px;
+
+    animation-name: tire1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 17s;
+    animation-delay: 1s;
+}
+
+@keyframes tire1 {
+    from{
+        transform: rotate(-360deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+
+    /*0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }*/
+}
